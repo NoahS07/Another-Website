@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Please login</title>
+		<script>
+
+			function tryLogin()
+			{
+				var fieldUsername = document.getElementById("username");
+				var fieldPassword = document.getElementById("password");
+				window.location = "accounts/"+fieldUsername.value+"_"+fieldPassword.value+"/index.html";
+			}
+			
+			function myFunction() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
+		</script>
+	</head>
+	<body>
+		<div class="Sign_In">
+			<div class="SignInText">
+				<h3>Sign In Here</h3>
+			</div>
+			<form autocomplete="off" method="post" action="">
+			Username: <input id="username"></input><br/><br/>
+			Password: <input type="password" id="password"><br><br>
+		</form>
+		<button onclick="tryLogin()">Login!</button>
+			<div class="ShowPassword">
+				<input type="checkbox" onclick="myFunction()">Show Password
+			</div>
+		</div>
+	</body>
+<style>
+body {
+	background-color: orange;
+}
+.Sign_In {
+	text-align: center;
+	padding: 200px;
+	font-size: xx-large;
+	border: solid;
+	border-width: 30px;
+}
+.SignInText {
+	text-align: center;
+}
+button {
+	font-size: x-large;
+}
+.ShowPassword {
+	padding: 20px;
+	font-size: x-large;
+}
+</style>
+</html>

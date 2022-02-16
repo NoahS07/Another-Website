@@ -1,0 +1,22 @@
+body{
+    background-color: white;
+}
+.Website {
+    padding: 15px;
+    font-size: 30px;
+    border-style: solid;
+    border-color: rgb(255, 166, 0);
+    border-width: 30px;
+}
+.TheButtons {
+    text-align: right;
+    border-bottom: 8px solid orange;
+    padding: 10px;
+    margin: 2px;
+}
+button {
+    font-size: 20px;
+}
+.AboutUs {
+    text-align: center;
+}
