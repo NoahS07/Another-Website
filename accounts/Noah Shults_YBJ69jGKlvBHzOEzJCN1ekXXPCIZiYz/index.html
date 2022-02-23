@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="A random website">
+    <meta name="keywords" content="random, website, anything">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +11,19 @@
 </head>
 <body>
     <div class="Website">
+        <div class="textColorChanger">
+        Change The Text Color <select name="clr" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1">
+            <br>
+            <option value="black">black
+                <option value="orange">orange
+                    <option value="flamingred">fuschia
+                        <option value="lightyellow">light yellow
+                            <option value="cyan">cyan
+                                <option value="yellow">yellow
+                                    <option value="red">red
+                                        <option value="white">white</option>
+        </select>&nbsp;&nbsp;
+</div>
         <div class="TheButtons">
             <button onclick="HomePage()">Home Page</button><wbr>
             <button onclick="About()">About Us</button><wbr>
@@ -124,7 +139,6 @@ if(cookie_consent != ""){
 }else{
     document.getElementById("cookieNotice").style.display = "block";
 }
-
 
     function HomePage() {
         window.location = "index.html";

@@ -7,9 +7,11 @@ body{
     border-style: solid;
     border-color: rgb(255, 166, 0);
     border-width: 30px;
+    border-radius: 2%;
 }
 .TheButtons {
     text-align: right;
+    border-radius: 10%;
     border-bottom: 8px solid orange;
     padding: 10px;
     margin: 2px;
@@ -19,4 +21,10 @@ button {
 }
 .AboutUs {
     text-align: center;
+}
+.textColorChanger {
+    border-radius: 10%;
+    font-size: medium;
+    border-bottom: 4px solid orange;
+    width: 30%;
 }
